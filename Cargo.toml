@@ -1,0 +1,10 @@
+[package]
+name = "hexreader"
+version = "1.0.0"
+edition = "2021"
+description = "Used to display the contents of a file in hexadecimal, written in Rust, fast as fuck"
+license = "MIT"
+authors = ["itsgerliz"]
+
+[dependencies]
+clap = { version = "4.5.21", features = ["derive"] } 
