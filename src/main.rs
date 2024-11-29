@@ -7,17 +7,17 @@ use std::process::exit;
 #[command(version, about)]
 struct CliArgs {
 	#[arg(help = "File path/s, absolute or relative", required = true)]
-	file_s: Vec<String>
+	files: Vec<String>
 }
 
-fn read_hex(file_c: &File) {
+fn read_hex(c_file: &File) {
 	
 }
 
 fn main() {
 	let parsed = CliArgs::parse();
 
-	for i in parsed.file_s {
+	for i in parsed.files {
 		let current = match File::open(&i) {
 			Ok(c) => { c }
 			Err(e) => {
