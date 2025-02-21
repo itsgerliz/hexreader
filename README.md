@@ -1,2 +1,2 @@
 # hexreader
-Used to display the contents of a file in hexadecimal, written in Rust, fast as fuck
+Used to display the contents of a file in hexadecimal, written in Rust for a school project
